@@ -1,0 +1,25 @@
+.holder {
+    position: relative;
+    width: 1051px;
+    height: 402px;
+}
+
+.key {
+    position: absolute;
+    border: solid 1px #888888;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+.key:hover {
+    background-color: #888888;
+}
+
+.key.selected {
+    background-color: #666666;
+}
+
+#form * {
+    font-size: 18pt;
+}
