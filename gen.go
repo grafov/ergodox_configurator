@@ -18,9 +18,13 @@ func main() {
 	re := regexp.MustCompile(`^(?:\.\d+)+\:\$(\d)\.\$(\d+)\s+(\S.+)`)
 	buf := bytes.NewBufferString(`<html>
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="layers">
+</div>
+
 <div class="holder">
 `)
 	r := bufio.NewReader(f)
@@ -37,7 +41,7 @@ func main() {
 		cssText := matches[3]
 
 		// if strangeNum == "0" {
-		buf.WriteString(`<div class="key" data-num="` + num + `" style="` + cssText + `">` + num + `</div>`)
+		buf.WriteString(`<div id="key` + num + `" class="key" data-num="` + num + `" style="` + cssText + `">` + num + `</div>`)
 		// }
 	}
 	buf.WriteString(`
@@ -46,7 +50,6 @@ func main() {
 <div id="form">
     <table>
         <tr><td>Id:     </td><td id="id"></td></tr>
-        <tr><td>Caption:</td><td><input id="caption" type="text" size="50"></td></tr>
         <tr><td>Macro:  </td><td><input id="macro"   type="text" size="50"></td></tr>
     </table>
 </div>

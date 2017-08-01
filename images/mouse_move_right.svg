@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="211px" height="168px" viewBox="0 0 211 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>mouse_move_right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M118,31.0031109 C118,13.88309 104.119434,0 86.9968891,0 L31.0031109,0 C13.88309,0 0,13.8805655 0,31.0031109 L0,109 C0,141.5848 26.4151998,168 59,168 C91.5848002,168 118,141.5848 118,109 L118,31.0031109 Z" id="path-1"></path>
+        <rect id="path-3" x="49" y="0" width="20" height="52.4444444"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="30" height="62.4444444">
+            <rect x="44" y="-5" width="30" height="62.4444444" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mouse_move_right">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#000000" opacity="0" xlink:href="#path-1"></use>
+            <g id="Rectangle-1" mask="url(#mask-2)" stroke-width="10" stroke="#000000">
+                <use mask="url(#mask-4)" xlink:href="#path-3"></use>
+            </g>
+            <rect id="Rectangle-1-Copy" fill="#FF0000" opacity="0" mask="url(#mask-2)" x="0" y="0.0827393805" width="46.2222222" height="61.0916121"></rect>
+            <rect id="Rectangle-1-Copy" fill="#FF0000" opacity="0" mask="url(#mask-2)" x="72" y="0.0827393805" width="46.2222222" height="61.0916121"></rect>
+            <rect id="Rectangle-2" fill="#000000" mask="url(#mask-2)" x="0" y="52.4444444" width="118" height="8"></rect>
+            <path d="M108,109 C108,136.061953 86.0619527,158 59,158 C31.9380473,158 10,136.061953 10,109 L10,31.0031109 C10,19.4044108 19.4049397,10 31.0031109,10 L86.9968891,10 C98.5955892,10 108,19.4049397 108,31.0031109 L108,109 Z M118,31.0031109 C118,13.88309 104.119434,0 86.9968891,0 L31.0031109,0 C13.88309,0 0,13.8805655 0,31.0031109 L0,109 C0,141.5848 26.4151998,168 59,168 C91.5848002,168 118,141.5848 118,109 L118,31.0031109 Z" id="Combined-Shape" fill="#000000" mask="url(#mask-2)"></path>
+            <polygon id="Triangle-1" fill="#000000" points="138.222222 120 138.222222 48 210.222222 84"></polygon>
+        </g>
+    </g>
+</svg>
