@@ -4,11 +4,17 @@ var TOTAL_KEY_COUNT = 76;
 var st = {
     currentLayer:0,
     currentKey:undefined,
-    layers:[
-        ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "TG(1)", "KC_CAPSLOCK", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_LSHIFT", "CTL_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_TRANSPARENT", "LT(1,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "TG(1)", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSLASH", "KC_H", "KC_J", "KC_K", "KC_L", "LT(2,KC_SCOLON)", "KC_F12", "MEH_T(KC_NO)", "KC_N", "KC_M", "KC_COMMA", "KC_DOT", "CTL_T(KC_SLASH)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(1)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
-        ["KC_ESCAPE", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_EXLM", "KC_AT", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_HASH", "KC_DLR", "KC_LPRN", "KC_RPRN", "KC_GRAVE", "KC_TRANSPARENT", "KC_PERC", "KC_CIRC", "KC_LBRACKET", "KC_RBRACKET", "KC_TILD", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_MOD", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_VAD", "RGB_VAI", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "KC_F11", "KC_TRANSPARENT", "KC_UP", "KC_7", "KC_8", "KC_9", "KC_ASTR", "KC_F12", "KC_DOWN", "KC_4", "KC_5", "KC_6", "KC_PLUS", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AMPR", "KC_1", "KC_2", "KC_3", "KC_BSLASH", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_DOT", "KC_0", "KC_EQUAL", "KC_TRANSPARENT", "RGB_TOG", "RGB_SLD", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_HUD", "RGB_HUI"],
-        ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_UP", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_LEFT", "KC_MS_DOWN", "KC_MS_RIGHT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_BTN1", "KC_MS_BTN2", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PLAY_PAUSE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PREV_TRACK", "KC_MEDIA_NEXT_TRACK", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AUDIO_VOL_UP", "KC_AUDIO_VOL_DOWN", "KC_AUDIO_MUTE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_WWW_BACK"],
-    ],
+    // layers:[
+    //     ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "TG(1)", "KC_CAPSLOCK", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_LSHIFT", "CTL_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_TRANSPARENT", "LT(1,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "TG(1)", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSLASH", "KC_H", "KC_J", "KC_K", "KC_L", "LT(2,KC_SCOLON)", "KC_F12", "MEH_T(KC_NO)", "KC_N", "KC_M", "KC_COMMA", "KC_DOT", "CTL_T(KC_SLASH)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(1)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
+    //     ["KC_ESCAPE", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_EXLM", "KC_AT", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_HASH", "KC_DLR", "KC_LPRN", "KC_RPRN", "KC_GRAVE", "KC_TRANSPARENT", "KC_PERC", "KC_CIRC", "KC_LBRACKET", "KC_RBRACKET", "KC_TILD", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_MOD", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_VAD", "RGB_VAI", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "KC_F11", "KC_TRANSPARENT", "KC_UP", "KC_7", "KC_8", "KC_9", "KC_ASTR", "KC_F12", "KC_DOWN", "KC_4", "KC_5", "KC_6", "KC_PLUS", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AMPR", "KC_1", "KC_2", "KC_3", "KC_BSLASH", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_DOT", "KC_0", "KC_EQUAL", "KC_TRANSPARENT", "RGB_TOG", "RGB_SLD", "KC_TRANSPARENT", "KC_TRANSPARENT", "RGB_HUD", "RGB_HUI"],
+    //     ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_UP", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_LEFT", "KC_MS_DOWN", "KC_MS_RIGHT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_BTN1", "KC_MS_BTN2", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PLAY_PAUSE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PREV_TRACK", "KC_MEDIA_NEXT_TRACK", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AUDIO_VOL_UP", "KC_AUDIO_VOL_DOWN", "KC_AUDIO_MUTE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_WWW_BACK"],
+    // ],
+layers:[
+    ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "TG(2)", "KC_CAPSLOCK", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_LSHIFT", "CTL_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_TRANSPARENT", "LT(2,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "TG(2)", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSLASH", "KC_H", "KC_J", "KC_K", "KC_L", "LT(3,KC_SCOLON)", "KC_F12", "MEH_T(KC_NO)", "KC_N", "KC_M", "KC_COMMA", "KC_DOT", "CTL_T(KC_SLASH)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(2)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
+    ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "UC(0x0439)", "UC(0x0446)", "UC(0x0443)", "UC(0x043A)", "UC(0x0435)", "KC_TRANSPARENT", "KC_TRANSPARENT", "UC(0x0444)", "UC(0x044B)", "UC(0x0432)", "UC(0x0430)", "UC(0x043F)", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT"],
+    ["KC_ESCAPE", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_EXLM", "KC_AT", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_HASH", "KC_DLR", "KC_LPRN", "KC_RPRN", "KC_GRAVE", "KC_TRANSPARENT", "KC_PERC", "KC_CIRC", "KC_LBRACKET", "KC_RBRACKET", "KC_TILD", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "KC_F11", "KC_TRANSPARENT", "KC_UP", "KC_7", "KC_8", "KC_9", "KC_ASTR", "KC_F12", "KC_DOWN", "KC_4", "KC_5", "KC_6", "KC_PLUS", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AMPR", "KC_1", "KC_2", "KC_3", "KC_BSLASH", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_DOT", "KC_0", "KC_EQUAL", "KC_TRANSPARENT", "", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "", ""],
+    ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_UP", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_LEFT", "KC_MS_DOWN", "KC_MS_RIGHT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_BTN1", "KC_MS_BTN2", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PLAY_PAUSE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PREV_TRACK", "KC_MEDIA_NEXT_TRACK", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AUDIO_VOL_UP", "KC_AUDIO_VOL_DOWN", "KC_AUDIO_MUTE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_WWW_BACK"],
+],
 };
 
 var captionMapping = {
@@ -148,6 +154,17 @@ var captionMapping = {
     KC_DQT:  '"', //
     KC_DQUO: '"', //  KC_DOUBLE_QUOTE double quote "
 
+    KC_APPLICATION: 'App',
+    KC_NO: '', // No key (like null)
+
+    KC_WWW_BACK: '⇦',
+    KC_AUDIO_VOL_UP: '🔊',
+    KC_AUDIO_VOL_DOWN: '🔉',
+    KC_AUDIO_MUTE: '🔇',
+    KC_MEDIA_PREV_TRACK: 'Prev',
+    KC_MEDIA_NEXT_TRACK: 'Next',
+    KC_MEDIA_PLAY_PAUSE: 'Play-Pause',
+
     KC_MS_UP:    { img: 'mouse_move_up.svg'    },
     KC_MS_DOWN:  { img: 'mouse_move_down.svg'  },
     KC_MS_RIGHT: { img: 'mouse_move_right.svg' },
@@ -159,7 +176,9 @@ var captionMapping = {
 var htmlElems = {
     macroInput  : document.getElementById('macro'),
     idElem      : document.getElementById('id'),
+    explainElem : document.getElementById('explain'),
     layersHolder: document.getElementById('layers'),
+    editWidget  : document.getElementById('edit_widget'),
 };
 
 var ifaceKeys = (new Array(TOTAL_KEY_COUNT)).fill(0);
@@ -172,12 +191,26 @@ eachElem('.key',function(e){
 });
 disableForm('#form', true);
 
+document.getElementById('btn_dump').addEventListener('click', function() {
+    dumpConfig();
+});
+
+function resolveKey(kc) {
+    var mapped = captionMapping[kc];
+    if (mapped !== undefined && typeof(mapped) === 'string') {
+        return mapped;
+    } else {
+        return kc;
+    }
+}
+
 function applyStatus() {
     if (st.currentLayer < 0 || st.currentLayer >= st.layers.length) {
         st.currentLayer = 0;
     }
 
     deleteChildren(htmlElems.layersHolder);
+    deleteChildren(htmlElems.explainElem);
     st.layers.forEach(function(layer, i){
         var div = document.createElement('div');
         setText(div, 'Layer '+i);
@@ -199,7 +232,15 @@ function applyStatus() {
     if (st.currentKey !== undefined) {
         disableForm('#form', false);
         setText(htmlElems.idElem, st.currentKey);
-        htmlElems.macroInput.value = st.layers[st.currentLayer][st.currentKey];
+        var keyMacro = st.layers[st.currentLayer][st.currentKey];
+        htmlElems.macroInput.value = keyMacro;
+
+        var complex = parseComplexMacro(keyMacro);
+        if (complex !== undefined && complex.data !== undefined) {
+            if (complex.data.explain !== undefined) {
+                setText(htmlElems.explainElem, complex.data.explain(complex.params));
+            }
+        }
 
         addClass(document.getElementById('key'+st.currentKey), 'selected');
     } else {
@@ -215,7 +256,16 @@ function setKeyMacro(keyId, macro) {
 
     deleteChildren(node);
     if (mapped === undefined) {
-        setText(node, macro);
+        var complex = parseComplexMacro(macro);
+        if (complex === undefined) {
+            setText(node, macro);
+        } else {
+            if (complex.data === undefined || complex.data.caption === undefined) {
+                setText(node, macro);
+            } else {
+                setText(node, complex.data.caption(complex.params));
+            }
+        }
     } else {
         if (typeof(mapped) === 'string') {
             setText(node, captionMapping[macro]);
@@ -231,6 +281,98 @@ function setKeyMacro(keyId, macro) {
                 node.appendChild(img);
             }
         }
+    }
+}
+
+var complexMapping = {
+    'TG':{
+        name: 'Toggle layer on/off',
+        explain: function(params) {
+            return 'Toggle the layer ' + params[0] + ' on/off';
+        },
+    },
+    'MO':{
+        name: 'Momentary switch to layer',
+        explain: function(params) {
+            return 'Switches to the layer ' + params[0] + ' while holding';
+        },
+    },
+    'LT':{
+        name: 'Momentary switch to layer when held and kc when tapped',
+        explain: function(params) {
+            return 'Switches to the layer ' + params[0] + ' while holding. Acts like the key ' + resolveKey(params[1]) + ' when tapped';
+        },
+        caption: function(params) {
+            return 'L' + params[0] + '/' + resolveKey(params[1]);
+        },
+    },
+
+    'CTL_T' : GenerateModifierTap('Ctr'    , 'Left control'),
+    'SFT_T' : GenerateModifierTap('LShift' , 'Left shift'),
+    'ALT_T' : GenerateModifierTap('Alt'    , 'Left alt'),
+    'ALGR_T': GenerateModifierTap('AltGr'  , 'AltGr'),
+    'GUI_T' : GenerateModifierTap('LGUI'   , 'LGUI'),
+    'ALL_T' : GenerateModifierTap('Hyp'    , 'Hyper'),
+    'LCAG_T': GenerateModifierTap('CtAlGui', 'Ctrl+Alt+GUI'),
+    'MEH_T' : GenerateModifierTap('CtAlSh' , 'Ctrl+Alt+Shift'),
+
+    'LCTL': GenerateModifierCombo('Ctrl'),
+
+    'UC': {
+        name: 'Unicode character',
+        explain: function(params) {
+            return 'Prints the unicode char "' + ConvertUnicode(params[0]) + '" (' + params[0] + ')';
+        },
+        caption: function(params) {
+            return ConvertUnicode(params[0]);
+        },
+    },
+};
+
+function ConvertUnicode(c) {
+    if (c.startsWith('0x')) {
+        return String.fromCharCode( parseInt(c.substring(2), 16) );
+    } else {
+        return c;
+    }
+}
+
+function GenerateModifierCombo(firstMod) {
+    return {
+        name: 'Modifier plus some other key',
+        explain: function(params) {
+            return 'Presses ' + firstMod + ' with ' + resolveKey(params[0]);
+        },
+        caption: function(params) {
+            return firstMod + '+' + resolveKey(params[0]);
+        },
+    };
+}
+
+function GenerateModifierTap(capModName, fullModName) {
+    return {
+        name: fullModName + ' when held and kc when tapped',
+        explain: function(params) {
+            return fullModName + ' when held and ' + resolveKey(params[0]) + ' when tapped';
+        },
+        caption: function(params) {
+            return capModName + '/' + resolveKey(params[0]);
+        },
+    };
+}
+
+function parseComplexMacro(text) {
+    var groups = /^([^\(]+)\(([^\)]+)\)$/.exec(text);
+    if (groups !== null && groups.length > 0) {
+        var name = groups[1];
+        var params = groups[2].split(',');
+        return {
+            data: complexMapping[name],
+            name: name,
+            params: params,
+        };
+    } else {
+        return undefined;
     }
 }
 
@@ -255,6 +397,20 @@ function disableForm(selector, disable) {
 function macroInputChanged() {
     st.layers[st.currentLayer][st.currentKey] = htmlElems.macroInput.value;
     applyStatus();
+}
+
+function dumpConfig() {
+    var text = "layers:[\n";
+
+    st.layers.forEach(function(layer) {
+        text += '    [' + layer.map(function(e){
+            return '"' + e + '"';
+        }).join(', ') + "],\n";
+    });
+
+    text += "],\n";
+
+    document.getElementById('config_text').value = text;
 }
 
 htmlElems.macroInput.addEventListener('change', macroInputChanged);

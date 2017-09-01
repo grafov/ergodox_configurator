@@ -13,9 +13,16 @@
 
 <div id="form">
     <table>
-        <tr><td>Id:     </td><td id="id"></td></tr>
-        <tr><td>Macro:  </td><td><input id="macro"   type="text" size="50"></td></tr>
+        <tr><td>Id:         </td><td id="id"></td></tr>
+        <tr><td>Macro:      </td><td><input id="macro"   type="text" size="50"></td></tr>
+        <tr><td>Explanation:</td><td id="explain"></td></tr>
+        <tr><td colspan="2" id="edit_widget"></td>
     </table>
+</div>
+
+<div>
+    <button id="btn_dump">Dump config</button>
+    <textarea id="config_text" rows="10" cols="200"></textarea>
 </div>
 
 <script type="text/javascript" src="index.js"></script>
