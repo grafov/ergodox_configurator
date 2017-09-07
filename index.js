@@ -10,11 +10,47 @@ var st = {
     //     ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_UP", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_LEFT", "KC_MS_DOWN", "KC_MS_RIGHT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_BTN1", "KC_MS_BTN2", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PLAY_PAUSE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PREV_TRACK", "KC_MEDIA_NEXT_TRACK", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AUDIO_VOL_UP", "KC_AUDIO_VOL_DOWN", "KC_AUDIO_MUTE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_WWW_BACK"],
     // ],
 layers:[
-    ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "TG(2)", "KC_CAPSLOCK", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_LSHIFT", "CTL_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_TRANSPARENT", "LT(2,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "TG(2)", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSLASH", "KC_H", "KC_J", "KC_K", "KC_L", "LT(3,KC_SCOLON)", "KC_F12", "MEH_T(KC_NO)", "KC_N", "KC_M", "KC_COMMA", "KC_DOT", "CTL_T(KC_SLASH)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(2)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
-    ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "UC(0x0439)", "UC(0x0446)", "UC(0x0443)", "UC(0x043A)", "UC(0x0435)", "KC_TRANSPARENT", "KC_TRANSPARENT", "UC(0x0444)", "UC(0x044B)", "UC(0x0432)", "UC(0x0430)", "UC(0x043F)", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT"],
-    ["KC_ESCAPE", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_EXLM", "KC_AT", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_HASH", "KC_DLR", "KC_LPRN", "KC_RPRN", "KC_GRAVE", "KC_TRANSPARENT", "KC_PERC", "KC_CIRC", "KC_LBRACKET", "KC_RBRACKET", "KC_TILD", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "KC_F11", "KC_TRANSPARENT", "KC_UP", "KC_7", "KC_8", "KC_9", "KC_ASTR", "KC_F12", "KC_DOWN", "KC_4", "KC_5", "KC_6", "KC_PLUS", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AMPR", "KC_1", "KC_2", "KC_3", "KC_BSLASH", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_DOT", "KC_0", "KC_EQUAL", "KC_TRANSPARENT", "", "", "KC_TRANSPARENT", "KC_TRANSPARENT", "", ""],
+    ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T", "TG(2)", "TG(1)", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G", "KC_LSHIFT", "CTL_T(KC_Z)", "KC_X", "KC_C", "KC_V", "KC_B", "KC_TRANSPARENT", "LT(2,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "TG(2)", "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_BSLASH", "KC_H", "KC_J", "KC_K", "KC_L", "LT(3,KC_SCOLON)", "KC_F12", "MEH_T(KC_NO)", "KC_N", "KC_M", "KC_COMMA", "KC_DOT", "CTL_T(KC_SLASH)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(2)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
+    ["KC_EQUAL", "KC_1", "KC_2", "KC_3", "KC_4", "KC_5", "KC_LEFT", "KC_DELETE", "ACTION_TAP_DANCE_DOUBLE(й,ё)", "ц", "у", "к", "е", "KC_TRANSPARENT", "TG(1)", "ф", "ы", "в", "а", "п", "KC_LSHIFT", "CTL_T(я)", "ч", "с", "м", "и", "KC_TRANSPARENT", "LT(2,KC_GRAVE)", "KC_QUOTE", "LCTL(KC_LALT)", "KC_LEFT", "KC_RIGHT", "ALT_T(KC_APPLICATION)", "KC_LGUI", "KC_HOME", "KC_SPACE", "KC_BSPACE", "KC_END", "KC_RIGHT", "KC_6", "KC_7", "KC_8", "KC_9", "KC_0", "KC_MINUS", "KC_TRANSPARENT", "н", "г", "ACTION_TAP_DANCE_DOUBLE(ш,щ)", "з", "ACTION_TAP_DANCE_DOUBLE(х,э)", "KC_BSLASH", "р", "о", "л", "д", "ж", "KC_F12", "MEH_T(KC_NO)", "т", "ACTION_TAP_DANCE_DOUBLE(ь,ъ)", "б", "ю", "TD(TD_RUCOMMA)", "KC_RSHIFT", "KC_UP", "KC_DOWN", "KC_LBRACKET", "KC_RBRACKET", "MO(2)", "KC_LALT", "CTL_T(KC_ESCAPE)", "KC_PGUP", "KC_PGDOWN", "KC_TAB", "KC_ENTER"],
+    ["KC_ESCAPE", "KC_F1", "KC_F2", "KC_F3", "KC_F4", "KC_F5", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_EXLM", "KC_AT", "KC_LCBR", "KC_RCBR", "KC_PIPE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_HASH", "KC_DLR", "KC_LPRN", "KC_RPRN", "KC_GRAVE", "KC_TRANSPARENT", "KC_PERC", "KC_CIRC", "KC_LBRACKET", "KC_RBRACKET", "KC_TILD", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_F6", "KC_F7", "KC_F8", "KC_F9", "KC_F10", "KC_F11", "KC_TRANSPARENT", "KC_UP", "KC_7", "KC_8", "KC_9", "KC_ASTR", "KC_F12", "KC_DOWN", "KC_4", "KC_5", "KC_6", "KC_PLUS", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AMPR", "KC_1", "KC_2", "KC_3", "KC_BSLASH", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_DOT", "KC_0", "KC_EQUAL", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT"],
     ["KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_UP", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_LEFT", "KC_MS_DOWN", "KC_MS_RIGHT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MS_BTN1", "KC_MS_BTN2", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PLAY_PAUSE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_MEDIA_PREV_TRACK", "KC_MEDIA_NEXT_TRACK", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_AUDIO_VOL_UP", "KC_AUDIO_VOL_DOWN", "KC_AUDIO_MUTE", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_TRANSPARENT", "KC_WWW_BACK"],
 ],
+};
+
+var exportMapping = {
+    'а': 'KC_F',
+    'б': 'KC_COMMA',
+    'в': 'KC_D',
+    'г': 'KC_U',
+    'д': 'KC_L',
+    'е': 'KC_T',
+    'ё': 'KC_GRAVE',
+    'ж': 'KC_SCOLON',
+    'з': 'KC_P',
+    'и': 'KC_B',
+    'й': 'KC_Q',
+    'к': 'KC_R',
+    'л': 'KC_K',
+    'м': 'KC_V',
+    'н': 'KC_Y',
+    'о': 'KC_J',
+    'п': 'KC_G',
+    'р': 'KC_H',
+    'с': 'KC_C',
+    'т': 'KC_N',
+    'у': 'KC_E',
+    'ф': 'KC_A',
+    'х': 'KC_LBRACKET',
+    'ц': 'KC_W',
+    'ч': 'KC_X',
+    'ш': 'KC_I',
+    'щ': 'KC_O',
+    'ъ': 'KC_RBRACKET',
+    'ы': 'KC_S',
+    'ь': 'KC_M',
+    'э': 'KC_QUOTE',
+    'ю': 'KC_DOT',
+    'я': 'KC_Z',
 };
 
 var captionMapping = {
@@ -191,8 +227,11 @@ eachElem('.key',function(e){
 });
 disableForm('#form', true);
 
-document.getElementById('btn_dump').addEventListener('click', function() {
-    dumpConfig();
+document.getElementById('btn_dump_js').addEventListener('click', function() {
+    dumpConfigJs();
+});
+document.getElementById('btn_dump_c').addEventListener('click', function() {
+    dumpConfigC();
 });
 
 function resolveKey(kc) {
@@ -211,6 +250,7 @@ function applyStatus() {
 
     deleteChildren(htmlElems.layersHolder);
     deleteChildren(htmlElems.explainElem);
+    deleteChildren(htmlElems.editWidget);
     st.layers.forEach(function(layer, i){
         var div = document.createElement('div');
         setText(div, 'Layer '+i);
@@ -239,6 +279,9 @@ function applyStatus() {
         if (complex !== undefined && complex.data !== undefined) {
             if (complex.data.explain !== undefined) {
                 setText(htmlElems.explainElem, complex.data.explain(complex.params));
+            }
+            if (complex.data.edit !== undefined) {
+                htmlElems.editWidget.appendChild(complex.data.edit(complex.params));
             }
         }
 
@@ -326,11 +369,46 @@ var complexMapping = {
         caption: function(params) {
             return ConvertUnicode(params[0]);
         },
+        edit: editWidgetUnicode,
+    },
+
+    'ACTION_TAP_DANCE_DOUBLE': {
+        name: 'Tapdance with 2 keys',
+        explain: function(params) {
+            return 'Prints ' + resolveKey(params[0]) + ' when tapped once and ' + resolveKey(params[1]) + ' when tapped twice fast';
+        },
+        caption: function(params) {
+            return resolveKey(params[0]) + '/' + resolveKey(params[1]);
+        },
     },
 };
 
+function editWidgetUnicode(params) {
+    var div = document.createElement('div');
+
+    var span = document.createElement('span');
+    setText(span, 'Edit char: ');
+
+    var input = document.createElement('input');
+    input.value = ConvertUnicode(params[0]);
+
+    var charUpdated = function() {
+        input.value = input.value.substring(0,1);
+        htmlElems.macroInput.value = 'UC(' + ConvertUnicode(input.value) + ')';
+        macroInputChanged();
+    };
+    input.addEventListener('change', charUpdated);
+    input.addEventListener('keyup', charUpdated);
+    
+    div.appendChild(span);
+    div.appendChild(input);
+    return div;
+}
+
 function ConvertUnicode(c) {
-    if (c.startsWith('0x')) {
+    if (c.length === 1) {
+        return '0x' + c.charCodeAt(0).toString(16);
+    } else if (c.startsWith('0x')) {
         return String.fromCharCode( parseInt(c.substring(2), 16) );
     } else {
         return c;
@@ -399,7 +477,7 @@ function macroInputChanged() {
     applyStatus();
 }
 
-function dumpConfig() {
+function dumpConfigJs() {
     var text = "layers:[\n";
 
     st.layers.forEach(function(layer) {
@@ -411,6 +489,52 @@ function dumpConfig() {
     text += "],\n";
 
     document.getElementById('config_text').value = text;
+}
+
+function dumpConfigC() {
+    var text = "";
+    var state = {
+        tapdances: [],
+    };
+    st.layers.forEach(function(layer, n) {
+        text += '  [' + n + '] = KEYMAP(' + layer.map(function(e){
+            Object.keys(exportMapping).forEach(function(key){
+                e = e.replace(key, exportMapping[key]);
+            });
+            return preprocessBeforeC(e, state);
+        }).join(', ') + "),\n\n";
+    });
+
+    text += "\n\n\n";
+
+    text += "//Tap Dance Declarations\nenum {\n";
+    state.tapdances.forEach(function(td, i){
+        text += '    ' + td.alias + ' = ' + i + ",\n";
+    });
+    text += "};\n\n";
+
+    text += "qk_tap_dance_action_t tap_dance_actions[] = {\n";
+    state.tapdances.forEach(function(td, i){
+        text += '    [' + td.alias + '] = ' + td.macro + ",\n";
+    });
+    text += "};\n\n";
+
+    document.getElementById('config_text').value = text;
+}
+
+function preprocessBeforeC(macro, state) {
+    var complex = parseComplexMacro(macro);
+    if (complex !== undefined) {
+        if (complex.name === 'ACTION_TAP_DANCE_DOUBLE') {
+            var alias = 'TD_AUTOGEN_' + state.tapdances.length;
+            state.tapdances.push({
+                alias: alias,
+                macro: macro,
+            });
+            return 'TD(' + alias + ')';
+        }
+    }
+    return macro;
 }
 
 htmlElems.macroInput.addEventListener('change', macroInputChanged);
@@ -441,7 +565,9 @@ function eachElem(selector, cb) {
 }
 
 function deleteChildren(elem) {
-    while (elem.firstChild) elem.removeChild(elem.firstChild);
+    while (elem.firstChild) {
+        elem.removeChild(elem.firstChild);
+    }
 }
 
 function setText(elem, text) {
